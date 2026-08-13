@@ -16,6 +16,6 @@ Then open `http://localhost:8000`.
 
 The site is intended for GitHub Pages at:
 
-`https://jackhuang0701.github.io/forewam/`
+`https://forewam.github.io/`
 
 All asset references are relative so the page works from the project subpath.
