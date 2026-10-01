@@ -32,6 +32,12 @@
     .authors { gap:8px 20px; font-size:15px; }
     .authors > span { white-space:nowrap; }
     .affiliations { gap:5px 20px; line-height:1.7; }
+    .institution-logos { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:24px 32px; margin:28px auto 0; padding:24px; max-width:1000px; background:#fff; border:1px solid var(--border); border-radius:12px; list-style:none; }
+    .institution-logos li { display:flex; align-items:center; justify-content:center; width:150px; height:64px; }
+    .institution-logos img { display:block; width:100%; height:100%; object-fit:contain; }
+    .institution-logos .logo-ace img { transform:scale(1.25); }
+    .institution-logos .logo-ntu img { transform:scale(1.6); }
+    @media (max-width:600px) { .institution-logos { gap:20px; padding:20px 12px; } .institution-logos li { width:125px; height:56px; } }
     .actions { margin:28px 0 40px; gap:12px; }
     .button { padding:13px 19px; border-radius:8px; }
     .button-primary { background:var(--amber-dark); border-color:var(--amber-dark); }
@@ -132,6 +138,13 @@
       <span><sup>5</sup>University of Sydney</span>
     </p>
     <p class="affiliations reveal"><span>* Research intern.</span><span>† Corresponding author.</span></p>
+    <ul class="institution-logos" aria-label="Author institutions">
+      <li><img src="static/images/SJTU.png" alt="Shanghai Jiao Tong University" title="Shanghai Jiao Tong University"></li>
+      <li class="logo-ace"><img src="static/images/ACE.png" alt="ACE Robotics" title="ACE Robotics"></li>
+      <li><img src="static/images/SII.svg" alt="Shanghai Innovation Institute" title="Shanghai Innovation Institute"></li>
+      <li class="logo-ntu"><img src="static/images/Nanyang_Technological_University-Logo.wine.svg" alt="Nanyang Technological University" title="Nanyang Technological University"></li>
+      <li><img src="static/images/university-of-sydney-seeklogo.png" alt="University of Sydney" title="University of Sydney"></li>
+    </ul>
 
     <div class="actions reveal">
       <a class="button button-primary" href="static/paper/ForeWAM.pdf" target="_blank" rel="noopener">Paper <span>PDF</span></a>
